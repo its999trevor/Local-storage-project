@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.sidebar {
+    width:400px;
+    height:100vh;
+    background:rgb(123, 46, 255);
+    position: fixed;
+    z-index:1;
+}
+h1{
+    position: relative;
+    left:100px;
+
+}
+.sidebar button{
+    font-size:20px;
+    height: 50px;
+    width:200px;
+    margin-left:80px;
+    margin-bottom:10px;
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.sidebar button:hover{
+    border:5px solid rgb(253, 81, 153);
+}
+.content{
+    position:absolute;
+    display: block;
+    top:250px;
+    left:960px;    
+
+}
+.list{
+    font-size:20px;
+    position:absolute;
+    top:40px;
+    left:500px; 
+}
+.list th{
+    padding:0px 0px 20px 200px;
+    font-weight: bolder;
+    font-size:30px;
+}
+.list td{
+    padding:0px 0px 0px 210px;
+    
+}
+.hidden{
+    display:none;
+}
+
+.content input{
+    margin-bottom:20px;
+    height:35px;
+    width:500px;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+}
+.content button{
+    font-size:20px;
+    font-weight: bold;
+    height:50px;
+    width:300px;
+    margin-left:105px;
+    border-style: none;
+    margin-bottom:10px;
+    background-color: blueviolet;
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
