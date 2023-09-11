@@ -37,8 +37,10 @@ let isProductAdded = false;
 product.forEach((item, index) => {    
     if (item.id === data.id) {
       alert('Product was already added');
+      if(item.name== data.name){
       product[index].qnty = parseInt(product[index].qnty) + parseInt(data.qnty);
       product[index].price= parseInt(product[index].price) + parseInt(data.price);
+      }
       isProductAdded = true;
     }
 
@@ -66,5 +68,16 @@ update.addEventListener("click",()=>{
           localStorage.setItem('product',JSON.stringify(product));
         }
       });
-})
+});
+let del=document.querySelector(".delete");
+del.addEventListener("click",()=>{
+  let delid=prompt();
+  console.log(delid);
+  product.forEach((element,index) => {
+    if(element.id==delid){
+      product.splice(index,1);
+    }
+    localStorage.setItem('product',JSON.stringify(product));
+  });
+});
 
